@@ -143,7 +143,7 @@ Similarly, your solution should update the `bin/test` script to install all depe
 
 Take some time to describe your submission's approach, and any platform requirements (i.e. Oracle Java 8 etc) which cannot be automatically installed via the `bin/` scripts. Put this into a `SUBMISSION.md` file in the root of your project.
 
-When you're ready, please zip the entire project folder, including the `.git` folder and submit it via email to `hannah@iflix.com`. Please ensure the zip file is your name so we know who it belongs to!
+When you're ready, please zip the entire project folder, including the `.git` folder and submit it via email to `hannah@iflix.com`. Please ensure the zip file is your number so we know who it belongs to!
 
 **Best of luck**
 

@@ -1,4 +1,4 @@
-#Iflix code challenge
+##Iflix code challenge
 
 **Developer Name: Amila Iddamalgoda**
 

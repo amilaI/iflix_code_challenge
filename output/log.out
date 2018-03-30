@@ -10,3 +10,36 @@
 2018-03-30 11:23:51 INFO  Application:14 - Hello World Prod
 2018-03-30 11:23:51 INFO  Application:14 - Hello World Prod
 2018-03-30 11:23:51 INFO  Application:14 - Hello World Prod
+2018-03-30 12:16:00 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:16:00 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:16:00 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:17:11 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:17:11 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:17:11 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: UNKNOWN; line: 1, column: 0]]
+2018-03-30 12:20:47 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:20:47 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:20:47 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:21:19 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: ../data/accounts.json (No such file or directory)]
+2018-03-30 12:21:19 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: ../data/accounts.json (No such file or directory)]
+2018-03-30 12:21:19 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: ../data/accounts.json (No such file or directory)]
+2018-03-30 12:22:59 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:22:59 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:22:59 ERROR PartnerController:32 - Error occurred in UserController: getUsers() : Error[java.io.FileNotFoundException: /data/accounts.json (No such file or directory)]
+2018-03-30 12:51:19 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-09-04T09:04:24+00:00')
+ at [Source: (File); line: 5, column: 15] (through reference chain: com.iflix.model.Partner["revocations"]->java.util.ArrayList[0]->com.iflix.model.Revocation["date"])]
+2018-03-30 12:51:19 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-09-04T09:04:24+00:00')
+ at [Source: (File); line: 5, column: 15] (through reference chain: com.iflix.model.Partner["revocations"]->java.util.ArrayList[0]->com.iflix.model.Revocation["date"])]
+2018-03-30 12:51:19 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-09-04T09:04:24+00:00')
+ at [Source: (File); line: 5, column: 15] (through reference chain: com.iflix.model.Partner["revocations"]->java.util.ArrayList[0]->com.iflix.model.Revocation["date"])]
+2018-03-30 12:52:59 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-02-21T15:10:01+00:00')
+ at [Source: (File); line: 36, column: 15] (through reference chain: com.iflix.model.Partner["grants"]->java.util.ArrayList[0]->com.iflix.model.Grant["date"])]
+2018-03-30 12:52:59 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-02-21T15:10:01+00:00')
+ at [Source: (File); line: 36, column: 15] (through reference chain: com.iflix.model.Partner["grants"]->java.util.ArrayList[0]->com.iflix.model.Grant["date"])]
+2018-03-30 12:52:59 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-02-21T15:10:01+00:00')
+ at [Source: (File); line: 36, column: 15] (through reference chain: com.iflix.model.Partner["grants"]->java.util.ArrayList[0]->com.iflix.model.Grant["date"])]
