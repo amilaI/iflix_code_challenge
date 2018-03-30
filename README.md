@@ -1,4 +1,4 @@
-##Iflix code challenge
+# Iflix code challenge
 
 **Developer Name: Amila Iddamalgoda**
 
@@ -18,7 +18,8 @@ Go to the project directory.
 ####cd /iflix
 ####mvn clean install exec:java
 ####Results should be written to /data/result.json file
-
+#### or 
+####you can go to **/iflix/bin** and type **./run**
 
 # Problem
 
