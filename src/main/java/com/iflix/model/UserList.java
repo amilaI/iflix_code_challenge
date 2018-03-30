@@ -16,4 +16,26 @@ public class UserList {
     public void setUsers(List<User> users) {
         this.users = users;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        UserList userList = (UserList) o;
+
+        return users != null ? users.equals(userList.users) : userList.users == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return users != null ? users.hashCode() : 0;
+    }
+
+    @Override
+    public String toString() {
+        return "UserList{" +
+                "users=" + users +
+                '}';
+    }
 }

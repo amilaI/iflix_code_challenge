@@ -1,21 +1,20 @@
 package com.iflix;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import com.iflix.controller.OfferController;
-import com.iflix.controller.PartnerController;
-import com.iflix.controller.UserController;
-import com.iflix.model.Partner;
 import com.iflix.model.User;
-import com.iflix.model.UserSubscription;
-import com.iflix.util.Constants;
+import com.iflix.service.SubscriptionService;
+import com.iflix.service.UserService;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.List;
 
+import static com.iflix.util.DataWriter.writeDataToOutputFile;
+
 /**
- * This is the main class of this program
+ * Application
+ *
+ * @author amilai (amila922@gmail.com)
  */
 public class Application {
 
@@ -23,50 +22,33 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /*UserController userController = new UserController();
+        // Create Objects of controllers
+        UserService userService = new UserService();
+        SubscriptionService subscriptionService = new SubscriptionService();
 
-        List<User> userList = userController.getUsers();
+        // Fetch user data
+        List<User> userList = userService.getUsers();
 
-        for (User user: userList){
-            System.out.println(user.getNumber() + user.getNumber());
-        }*/
-
-        /*PartnerController partnerController = new PartnerController();
-
-        Partner partner = partnerController.getPartnerData(Constants.PARTNER.WONDERTEL);*/
-
-
-        User user = new User();
-        user.setName("Ahmad");
-        user.setNumber(99994739873l);
-
-        /*JSONObject partners = new JSONObject();
-        partners.put("amazecom", 34);
-        partners.put("wondertel", 62);
-
-        JSONObject user1 = new JSONObject();
-        user1.put("Sally",partners);
-
-        JSONObject user2 = new JSONObject();
-        user2.put("Farhan",partners);
-
-        JSONArray subscriptionJson = new JSONArray();
-        subscriptionJson.put(user1);
-        subscriptionJson.put(user2);
-
+        // Create output array
         JSONObject outputJsonObject = new JSONObject();
-        outputJsonObject.put("subscriptions", subscriptionJson);*/
+        JSONArray subscriptionJson = new JSONArray();
 
-        OfferController offerController = new OfferController();
-        UserSubscription userSubscription= offerController.getSubscriptionForUser(user);
+        for (User user : userList) {
 
-        System.out.println();
+            // Calculate subscription
+            JSONObject userSubscription = subscriptionService.doSubscriptionProcessing(user);
 
+            if (userSubscription != null) {
+                subscriptionJson.put(userSubscription);
+            }
 
+        }
 
+        // Display final output
+        outputJsonObject.put("subscriptions", subscriptionJson);
 
-
-
+        // Write data to file (/data/result.json)
+        writeDataToOutputFile(outputJsonObject);
 
     }
 

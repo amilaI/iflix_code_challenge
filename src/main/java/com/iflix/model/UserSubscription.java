@@ -40,4 +40,36 @@ public class UserSubscription {
     public void setRevocations(List<Revocation> revocations) {
         this.revocations = revocations;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        UserSubscription that = (UserSubscription) o;
+
+        if (number != that.number) return false;
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        if (grantList != null ? !grantList.equals(that.grantList) : that.grantList != null) return false;
+        return revocations != null ? revocations.equals(that.revocations) : that.revocations == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (int) (number ^ (number >>> 32));
+        result = 31 * result + (grantList != null ? grantList.hashCode() : 0);
+        result = 31 * result + (revocations != null ? revocations.hashCode() : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "UserSubscription{" +
+                "name='" + name + '\'' +
+                ", number=" + number +
+                ", grantList=" + grantList +
+                ", revocations=" + revocations +
+                '}';
+    }
 }

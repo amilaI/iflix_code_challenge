@@ -1,4 +1,4 @@
-package com.iflix.controller;
+package com.iflix.service;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,13 +9,13 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 
-public class PartnerController {
+public class PartnerService {
 
-    private final static Logger LOGGER = Logger.getLogger(PartnerController.class);
+    private final static Logger LOGGER = Logger.getLogger(PartnerService.class);
 
     private String PROJECT_PATH;
 
-    public PartnerController() {
+    public PartnerService() {
         PROJECT_PATH = System.getProperty("user.dir");
     }
 
@@ -40,7 +40,7 @@ public class PartnerController {
                 partner.setName(partnerName);
             } catch (Exception e) {
 
-                LOGGER.error("Error occurred in PartnerController: getPartnerData() : Error[" + e + "]");
+                LOGGER.error("Error occurred in PartnerService: getPartnerData() : Error[" + e + "]");
 
             }
         }

@@ -54,4 +54,13 @@ public class Partner {
         result = 31 * result + (revocations != null ? revocations.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Partner{" +
+                "name='" + name + '\'' +
+                ", grants=" + grants +
+                ", revocations=" + revocations +
+                '}';
+    }
 }
