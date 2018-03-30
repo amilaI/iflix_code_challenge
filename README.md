@@ -13,13 +13,13 @@ In order to address this challenge, I have used **java** as the primary programm
 
 Java version: 1.8
 
-##How to run the project
+## How to run the project
 Go to the project directory. 
-####cd /iflix
-####mvn clean install exec:java
-####Results should be written to /data/result.json file
+#### cd /iflix
+#### mvn clean install exec:java
+#### Results should be written to /data/result.json file
 #### or 
-####you can go to **/iflix/bin** and type **./run**
+#### you can go to **/iflix/bin** and type **./run**
 
 # Problem
 
