@@ -18,8 +18,12 @@ Go to the project directory.
 #### cd /iflix
 #### mvn clean install exec:java
 #### Results should be written to /data/result.json file
-#### or 
+## or 
 #### you can go to **/iflix/bin** and type **./run**
+## or
+#### java -jar iflix-challenge-1.0-SNAPSHOT-jar-with-dependencies.jar 
+This jar is located in the iflix folder. This was created via mvn clean install package command.
+
 
 # Problem
 
