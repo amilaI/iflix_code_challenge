@@ -26,9 +26,9 @@ public class Application {
             System.out.println(user.getNumber() + user.getNumber());
         }*/
 
-        /*PartnerController partnerController = new PartnerController();
+        PartnerController partnerController = new PartnerController();
 
-        Partner partner = partnerController.getPartnerData(Constants.PARTNER.WONDERTEL);*/
+        Partner partner = partnerController.getPartnerData(Constants.PARTNER.WONDERTEL);
 
         System.out.println();
 
