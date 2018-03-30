@@ -8,9 +8,19 @@ import java.util.Date;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Grant implements Serializable {
 
+    private String partner;
     private long number;
     private Date date;
     private int period;
+    private Date expireDate;
+
+    public String getPartner() {
+        return partner;
+    }
+
+    public void setPartner(String partner) {
+        this.partner = partner;
+    }
 
     public long getNumber() {
         return number;
@@ -34,6 +44,14 @@ public class Grant implements Serializable {
 
     public void setPeriod(int period) {
         this.period = period;
+    }
+
+    public Date getExpireDate() {
+        return expireDate;
+    }
+
+    public void setExpireDate(Date expireDate) {
+        this.expireDate = expireDate;
     }
 
     @Override

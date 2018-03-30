@@ -43,3 +43,6 @@
  at [Source: (File); line: 36, column: 15] (through reference chain: com.iflix.model.Partner["grants"]->java.util.ArrayList[0]->com.iflix.model.Grant["date"])]
 2018-03-30 12:52:59 ERROR PartnerController:37 - Error occurred in PartnerController: getPartnerData() : Error[com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `org.joda.time.DateTime` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('2015-02-21T15:10:01+00:00')
  at [Source: (File); line: 36, column: 15] (through reference chain: com.iflix.model.Partner["grants"]->java.util.ArrayList[0]->com.iflix.model.Grant["date"])]
+2018-03-30 13:43:00 INFO  Application:55 - {"subscriptions":[{"Sally":{"amazecom":34,"wondertel":62}},{"Farhan":{"amazecom":34,"wondertel":62}}]}
+2018-03-30 13:43:00 INFO  Application:55 - {"subscriptions":[{"Sally":{"amazecom":34,"wondertel":62}},{"Farhan":{"amazecom":34,"wondertel":62}}]}
+2018-03-30 13:43:00 INFO  Application:55 - {"subscriptions":[{"Sally":{"amazecom":34,"wondertel":62}},{"Farhan":{"amazecom":34,"wondertel":62}}]}

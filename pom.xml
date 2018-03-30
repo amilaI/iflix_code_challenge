@@ -37,8 +37,12 @@
             <version>3.7</version>
         </dependency>
 
-
-
+        <!-- JSON creation -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
+        </dependency>
 
 
     </dependencies>

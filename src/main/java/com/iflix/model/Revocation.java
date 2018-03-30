@@ -8,8 +8,17 @@ import java.util.Date;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Revocation implements Serializable {
 
+    private String partner;
     private long number;
     private Date date;
+
+    public String getPartner() {
+        return partner;
+    }
+
+    public void setPartner(String partner) {
+        this.partner = partner;
+    }
 
     public long getNumber() {
         return number;

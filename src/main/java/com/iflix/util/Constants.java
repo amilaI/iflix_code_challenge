@@ -1,5 +1,8 @@
 package com.iflix.util;
 
+/**
+ * Constants
+ */
 public class Constants {
 
     public interface USER {
@@ -12,9 +15,8 @@ public class Constants {
     }
 
     public interface PARTNER {
-        String AMAZECOM = "AMAZECOM";
-        String WONDERTEL = "WONDERTEL";
+        String AMAZECOM = "amazecom";
+        String WONDERTEL = "wondertel";
     }
-
 
 }
