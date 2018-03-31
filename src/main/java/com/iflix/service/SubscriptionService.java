@@ -4,6 +4,7 @@ import com.iflix.model.*;
 import com.iflix.util.Constants;
 import org.joda.time.DateTime;
 import org.joda.time.Days;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -20,6 +21,33 @@ public class SubscriptionService {
 
     public SubscriptionService() {
         partnerService = new PartnerService();
+    }
+
+    /**
+     * getSubscriptionJsonObject
+     *
+     * @param userList List<User>
+     * @return JSONObject
+     */
+    public JSONObject getSubscriptionJsonObject(List<User> userList) {
+
+        JSONObject outputJsonObject = new JSONObject();
+        JSONArray subscriptionJson = new JSONArray();
+
+        for (User user : userList) {
+
+            // Calculate subscription
+            JSONObject userSubscription = doSubscriptionProcessing(user);
+
+            if (userSubscription != null) {
+                subscriptionJson.put(userSubscription);
+            }
+
+        }
+
+        // Display final output
+        outputJsonObject.put("subscriptions", subscriptionJson);
+        return outputJsonObject;
     }
 
     /**
@@ -115,7 +143,7 @@ public class SubscriptionService {
      * @param user User
      * @return JSONObject
      */
-    public JSONObject doSubscriptionProcessing(User user) {
+    private JSONObject doSubscriptionProcessing(User user) {
 
         SubscriptionService offerController = new SubscriptionService();
         UserSubscription userSubscription = offerController.getSubscriptionForUser(user);

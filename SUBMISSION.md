@@ -24,6 +24,8 @@ Go to the project directory.
 #### java -jar iflix-challenge-1.0-SNAPSHOT-jar-with-dependencies.jar 
 This jar is located in the iflix folder. This was created via mvn clean install package command.
 
+### How to run unit tests
+**mvn clean test**
 
 # Problem
 
